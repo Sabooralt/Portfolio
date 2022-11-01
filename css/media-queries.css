@@ -1,0 +1,127 @@
+
+@media (max-width:370px){
+    .skills-bar-container{
+      min-width: 170px !important;
+    }
+  }
+  .x-btnsvg{
+      display: none;
+  }
+
+@media (max-width:660px) {
+    .socials {
+        display: none;
+    }
+    .x-btnsvg{
+        display: block;
+    }
+
+    .navbar1>.nav-responsive {
+        margin: 0;
+        position: fixed;
+        inset: 0 0 0 100%;
+        z-index: 10;
+        flex-direction: column;
+        padding: 15vh 3em !important;
+        background: #EFEFEF;
+        transition: 0.4s ease-in-out;
+    }
+
+    .navbar1>.nav-responsive::after {
+        padding-top: 80px;
+        content: '© 2022. Made with passion by Abdul Saboor. All right reserved.';
+        color: #000;
+    }
+
+    #nav-res-btn {
+        display: block;
+        z-index: 0;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        width: 1.5rem;
+        right: 2rem;
+        top: 28px;
+    }
+
+    .x-btnsvg {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        right: 27px;
+        border-radius: 50%;
+        position: absolute;
+        top: 28px;
+        padding: 8px;
+        transition: 300ms ease-in;
+    }
+    
+
+    .x-btnsvg:hover {
+        background-color: #8d8d8d5b;
+    }
+
+    .navbar1>.nav-responsive>.x-btnsvg>img {
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .li1::before,
+    .li2::before,
+    .li3::before,
+    .li4::before {
+        display: none;
+    }
+
+    .navbar1>.nav-responsive>li>a {
+        color: #000 !important;
+    }
+
+    .nav-responsive-toggle>svg {
+        fill: rgb(255, 255, 255) !important;
+    }
+    .x-btnwhite{
+        display: none;
+    }
+
+
+
+}
+@media(max-width:880px) {
+    .content h1 {
+        display: inline;
+        font-size: 80px;
+    }
+    .content p{
+          font-size: 18px !important;
+    } 
+
+}
+
+@media(max-width:550px) {
+    .content h1 {
+        font-size: 70px;
+       
+    }
+    .content p{
+        font-size: 10px !important;
+        padding: 10px 40px !important;
+  } 
+
+}
+@media(max-width:480px) {
+    .content h1 {
+         font-size: 50px;
+         
+     }
+     .content p{
+        font-size: 10px !important;
+        padding: 8px 30px !important;
+  } 
+
+}
+@media (max-width:990px){
+    .about-heading{
+        margin-top: 40px;
+    }
+}

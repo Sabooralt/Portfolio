@@ -1,0 +1,467 @@
+html,h1,h2,h3,h4,h5,p,a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none !important;
+    color: #fff;
+}
+.pointed{
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+  }
+ul{
+    padding: 0 !important;
+}
+@font-face {
+    font-family: Stanley;
+    src: url(../tt-commons-cufonfonts/TT\ Commons\ Medium.otf);
+}
+
+*,html,body{
+    scroll-padding: 120px;
+    scroll-behavior: smooth !important;
+    
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(11, 14, 17) !important;
+    overflow-x: hidden !important;
+    
+    
+    
+
+}
+
+/* Background Overlay */
+.background-overlay{
+    background-color: transparent;
+    background: linear-gradient(0deg, rgb(11, 14, 17)
+    4%, rgb(11, 14, 17 , 0.28)
+    40%);
+    z-index: 20;
+}
+.background-overlay-img {
+    position: relative;
+    background: url(../images/cover11.jpg);
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    opacity: 1;
+}
+nav{
+    transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1) ;
+}
+/* Background Overlay */
+
+/* Navbar */
+.navbar1 {
+    width: 100%;
+    background: none;
+    z-index: 20;
+    position: absolute;
+    display: flex;
+}
+.navbar1>ul {
+    margin-top: 35px;
+    width: fit-content;
+    list-style: none;
+    padding: 5px;
+    gap: 20px;
+    display: flex;
+    color: #ffff;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar1>ul>li{
+    width: fit-content;
+}
+.navbar1>ul>li>a {
+    color: #fff;
+}
+.navbar1>ul:hover > .licolor{
+    opacity: 0.3;
+} 
+.navbar1>ul:hover > .licolor:hover{
+    color: #66d9ed;
+    opacity: 1;
+
+}
+.licolor{
+    transition: opacity 400ms ease;
+}
+
+.nav-responsive-toggle {
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    margin: 0 !important;
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 25px 50px;
+    color: #66d9ed;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 1 !important;
+}
+
+
+
+h1,h2,h3,h4 {
+    font-family: Stanley !important;
+    color: #fff;
+}
+
+.li1::before {
+    position: relative;
+    font-size: 11px;
+    content: '01';
+    bottom: 25px;
+    left: 65px; 
+    
+}
+
+.li2::before {
+    position: relative;
+    font-size: 11px;
+    content: '02';
+    bottom: 25px;
+    left: 90px;
+}
+
+.li3::before {
+    position: relative;
+    font-size: 11px;
+    content: '03';
+    bottom: 25px;
+    right: -70px;
+}
+
+.li4::before {
+    position: relative;
+    font-size: 11px;
+    content: '04';
+    bottom: 25px;
+    right: -93px;
+    
+}
+
+/* Navbar */
+
+/* Content */
+
+.content {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-shadow: 2px 5px 13px rgba(0, 0, 0, 0.418);
+}
+
+.content>h1 {
+    mask-size: 100vmin;
+  mask-repeat: no-repeat;
+  mask-position: center;
+    mask-image: url(/images/spiderweb.png);
+    text-rendering: optimizeLegibility;
+    font-size: 8vw ;
+    font-family: Stanley !important;
+    
+}
+.content > p{
+    font-size: 22px;
+}
+/* Content */
+
+/* Socials bar */
+.socials {
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: #fff;
+    box-shadow: rgba(247, 247, 247, 0.493) 0 7px 29px 0;
+    padding: -5rem;
+}
+
+
+.socials>.icon {
+    width: 100%;
+    cursor: pointer;
+}
+
+.socials>.icon>a {
+    width: 100%;
+    display: block;
+    padding: 10px 0.45rem;
+    transition: background .3s;
+    border-radius: 5px;
+}
+
+.socials>.icon>a:hover {
+    background-color: rgba(44, 29, 25, 0.253);
+}
+
+.socials>.icon>a>img {
+    width: 28px;
+    height: 28px;
+}
+/* Socials bar */
+
+/* Arrow up */
+.arrow-icon {
+    z-index: 2;
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+}
+.arrow-icon>a {
+    position: relative;
+    text-align: center;
+    color: #b7f;
+    font-size: 20px;
+    right: -18.2px; 
+    top: 9px;  
+}
+/* Arrow up */
+/* About Me */
+
+.skills{
+    left: 80px;
+}
+
+
+/* .skills-heading::before{
+    position: relative;
+    font-size: 11px;
+    content: '00000000000000000000000000000';
+    color: #DF058D;
+    bottom: -6px;
+    height: 0.3em;
+    font-size: 10px;
+    left: 159px;
+    z-index: -1;
+
+    
+    background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+} */
+.about-heading{
+
+    font-size: clamp(40px,60px,3vw);
+    margin: 0 0 auto;
+    width: fit-content;
+}
+
+.about-box{
+    margin-top: 29px;
+    border: 4px solid #a3a3a3;
+    padding: 36px;
+    padding-bottom: 46px;
+}
+.spider-web{
+    width: 200px;
+    right: 23%;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+.spider-web-hanging{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 100px;
+}
+.spider-web-hanging-2{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 150px;
+}
+.about-box > p{
+    padding-top: 15px;
+    line-height: 2.1;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.skills-about-container{
+    margin: 0 180px;
+
+}
+.aftergradient{
+    left: 3px;
+    bottom: 12px;
+    position: relative;
+    height: 0.15em;
+    z-index: -1;
+    
+    background: linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%);
+}
+.aftergradient1{
+    left: 3px;
+    bottom: 12px;
+    position: relative;
+    height: 0.15em;
+    z-index: -1;
+    background: linear-gradient(65deg, #2C49D8 0%, #2C49D8 100%, rgba(255, 209, 0, 0) 100%);
+  }
+
+/* About Me */
+/* My work */
+.work{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hover-work{
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.work-image{
+    overflow: hidden;
+}
+.hoverimg{
+    
+    transition: transform .5s ease;
+    transition:  0.5s ease;
+}
+.work-image > img{
+    overflow: hidden;
+}
+.work-heading{
+    
+    margin-bottom: 90px ;
+   font-size: calc(1.375rem + 5.5vw);
+}
+.work-details{
+    overflow: hidden;
+    padding: 2.4vh;
+    background-color: rgba(136,136,136,.05);
+}
+.work-details > h2{
+    font-family: Stanley;
+    font-weight: 550;
+    font-size: 6vmin;
+}
+.work-details > p{
+    color: #ffffffbf;
+  font-size: 2.5vmin;    
+} .work-details > p > a{
+    color: #ffffffbf;
+  font-size: 2.5vmin;    
+} 
+/* .work-details > h2{
+    margin-right: 550px;
+}
+*/
+/* My work */
+
+/* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+background: #000;
+font-family: 'Roboto Mono', monospace;
+text-decoration: none;
+padding: 10px;
+padding-bottom: 30px;
+border-radius: 20px;
+z-index: 1;
+}
+.contact>h1{
+    padding: 10px;
+}
+.contact > p{
+    padding: 10px;
+    padding-bottom: 0;
+}
+.aftergradient2{
+left: -1px;
+bottom: 6px;
+width: 102%;
+position: relative;
+height: 0.35em;
+z-index: -1;
+transition: all 400ms ease-in-out;
+background: linear-gradient(65deg,rgba(153, 0, 18, 0.664)  50%,#990011ff 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+.contact > h5:hover > .aftergradient2{
+    bottom: 20px;
+    height: 1em;
+}
+
+
+.contact > a{
+    font-family: 'Roboto Mono', monospace;
+width: fit-content;
+    color: #fcf6f5ff;
+    
+    padding: 10px;
+    transition: 400ms;
+}
+@media (max-width:333px){
+
+    .contact > p > a{
+        text-transform: inherit;
+     font-size: 10px;    
+    } 
+}
+.contact > p > a{
+    text-transform: inherit;
+ font-size: 16px;    
+} 
+.contact > a > i{
+    padding-right: 6px;
+}
+.education{
+    background: #101820ff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+.education > .edu-details{
+    
+    padding: 20px;
+}
+.education > .edu-details> p{
+    color: #fcf6f5ff;
+
+    padding: 50px 0;
+}
+.education > .edu-details> p > a{
+    color: #9440e8 ;
+}
+.education > h1{
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Contact */
+
