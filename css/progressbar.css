@@ -16,18 +16,11 @@
     float: right;
     margin-top: 29px;
     border: 4px solid#a3a3a3;
-    padding: 60px;
+    padding: 60px 46px 20px;
 }
 
 .skills-bar-container {
   font-family: sans-serif  !important;
-
-    position: relative;
-    width:  clamp(300px,500px) ;
-    top: 252px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     list-style: none;
 }
 
@@ -94,6 +87,36 @@
     animation-delay: 1.4s;
 }
 
+.skills-bar-container li .bar-container #progress-laravel {
+    -webkit-animation-name: progress-laravel;
+    animation-name: progress-laravel;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.skills-bar-container li .bar-container #progress-angular {
+    -webkit-animation-name: progress-angular;
+    animation-name: progress-angular;
+    -webkit-animation-delay: 2.3s;
+    animation-delay: 2.3s;
+}
+.skills-bar-container li .bar-container #progress-reactjs {
+    -webkit-animation-name: progress-reactjs;
+    animation-name: progress-reactjs;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.skills-bar-container li .bar-container #progress-sqlserver {
+    -webkit-animation-name: progress-sqlserver;
+    animation-name: progress-sqlserver;
+    -webkit-animation-delay:2.2s;
+    animation-delay: 2.2s;
+}
+.skills-bar-container li .bar-container #progress-sql {
+  -webkit-animation-name: progress-sql;
+  animation-name: progress-sql;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
 .skills-bar-container li .bar-container #progress-bootstrap {
     -webkit-animation-name: progress-html;
     animation-name: progress-html;
@@ -121,13 +144,20 @@
     -webkit-animation-delay: 2.8s;
     animation-delay: 2.8s;
 }
-
-.skills-bar-container li .bar-container #progress-sql {
-    -webkit-animation-name: progress-sql;
-    animation-name: progress-sql;
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
+.skills-bar-container li .bar-container #progress-csharp {
+    -webkit-animation-name: progress-csharp;
+    animation-name: progress-csharp;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
 }
+.skills-bar-container li .bar-container #progress-dotnet {
+    -webkit-animation-name: progress-dotnet;
+    animation-name: progress-dotnet;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+
 
 .progressred {
     background-color: #c0392b;
@@ -149,16 +179,35 @@
     background-color: #27ae60;
 }
 
+.progresslaravel {
+    background-color: #a91bcc;
+}
+.progressangular {
+    background-color: #C3002F;
+}
+.progressreactjs {
+    background-color: rgba(59,130,246,.5);
+}
+
 .progressbootstrap {
     background-color: #27ae60;
 }
 
+.progresssqlserver {
+    background-color: #00ffff;
+}
 .progresssql {
     background-color: #DF058D;
 }
 
 .progressphp {
     background-color: #00f7ff;
+}
+.progresscsharp {
+    background-color: #38206A;
+}
+.progressdotnet {
+    background-color: #b3b01b;
 }
 
 @keyframes progress-html {
@@ -181,6 +230,43 @@
     }
 }
 
+@keyframes progress-laravel {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+@keyframes progress-angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 25%;
+    }
+}
+@keyframes progress-reactjs {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes progress-sqlserver {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
 @keyframes progress-bootstrap {
     0% {
         width: 0%;
@@ -217,7 +303,25 @@
     }
 
     100% {
-        width: 20%;
+        width: 45%;
+    }
+}
+@keyframes progress-csharp{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+@keyframes progress-dotnet{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 10%;
     }
 }
 
@@ -227,7 +331,7 @@
     }
 
     100% {
-        width: 35%;
+        width: 90%;
     }
 }
 

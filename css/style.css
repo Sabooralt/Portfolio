@@ -6,6 +6,23 @@ html,h1,h2,h3,h4,h5,p,a {
     text-decoration: none !important;
     color: #fff;
 }
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #29a5d6ec;
+}
 .pointed{
     position: relative;
     width: 7px;
@@ -22,7 +39,7 @@ ul{
 }
 
 *,html,body{
-    scroll-padding: 120px;
+    scroll-padding: 200px;
     scroll-behavior: smooth !important;
     
 }
@@ -48,7 +65,7 @@ body {
 }
 .background-overlay-img {
     position: relative;
-    background: url(../images/cover11.jpg);
+    background: linear-gradient(rgb(0 0 0),rgb(0 0 0 / 22%)),url(../images/xd11.jpg);
     z-index: -10;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,8 +211,8 @@ h1,h2,h3,h4 {
     transform: translateY(-50%);
     left: 0;
     background: #fff;
-    box-shadow: rgba(247, 247, 247, 0.493) 0 7px 29px 0;
-    padding: -5rem;
+    box-shadow: rgba(247, 247, 247, 0.493) 0 3px 19px 0;
+
 }
 
 
@@ -207,7 +224,7 @@ h1,h2,h3,h4 {
 .socials>.icon>a {
     width: 100%;
     display: block;
-    padding: 10px 0.45rem;
+    padding: 8px 0.3rem;
     transition: background .3s;
     border-radius: 5px;
 }
@@ -273,7 +290,7 @@ h1,h2,h3,h4 {
     margin-top: 29px;
     border: 4px solid #a3a3a3;
     padding: 36px;
-    padding-bottom: 46px;
+    padding-bottom: 10px;
 }
 .spider-web{
     width: 200px;
